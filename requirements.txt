@@ -1,0 +1,6 @@
+xgboost==3.0.4
+scikit-learn==1.7.1
+streamlit==1.39.0
+pandas==2.2.3
+numpy==2.1.2
+pip install matplotlib==3.3.4
