@@ -16,7 +16,7 @@ def load_model():
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/prediction_2024_extended.csv")
+    df = pd.read_csv("prediction_2024_extended.csv")
     df.columns = df.columns.str.strip()  # 👈 공백 제거
     return df
 
