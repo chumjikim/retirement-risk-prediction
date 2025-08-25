@@ -3,6 +3,9 @@ import pandas as pd
 import pickle
 from xgboost import XGBClassifier
 
+st.set_page_config(page_title="퇴직연금 리스크 예측", layout="wide")
+st.title("퇴직연금 재정검증 리스크 예측 결과 (2024)")
+
 # ===============================
 # 1) 모델 & 데이터 로드
 # ===============================
@@ -22,9 +25,6 @@ def load_data():
 
 model, meta = load_model()
 df = load_data()
-
-st.set_page_config(page_title="퇴직연금 리스크 예측", layout="wide")
-st.title("퇴직연금 재정검증 리스크 예측 결과 (2024)")
 
 # ===============================
 # 2) 검색 기능
